@@ -12,6 +12,7 @@ public class MyFilter2 implements Filter {
     public MyFilter2(EventNotify eventNotify) {
         this.eventNotify = eventNotify;
     }
+
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain filterChain) throws IOException, ServletException {
         System.out.println("필터 2 실행됨 !!");
